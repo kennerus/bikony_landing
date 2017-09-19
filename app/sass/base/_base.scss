@@ -11,11 +11,8 @@ body{
     font-family: inherit;
     text-align: left;
     vertical-align: baseline;
-    //font-family: 'Open Sans', sans-serif;
-    //font-family: 'PT Sans', sans-serif;
-    //font-family: 'Roboto', sans-serif;
-    //font-family: 'Source Sans Pro', sans-serif;
-    //font-family: 'Lato', sans-serif;
+    font-family: 'Gilroy-Medium', sans-serif;
+    color: #30333d;
 }
 
 a {
@@ -47,4 +44,8 @@ textarea{
         line-height: 0;
         clear: both;
     }
+}
+
+.container {
+    position: relative;
 }

@@ -1,0 +1,107 @@
+.header {
+	min-height: 768px;
+	background-image: url(../img/header-bg.jpg);
+
+	.header__logo {
+		box-shadow: -25px 25px 50px #303030;
+		padding: 0;
+		max-width: 125px;
+	}
+	
+	.header__solutions {
+		height: calc(768px - 130px);
+
+		.header__phone {
+			background-image: url(../img/hand.png);
+			background-repeat: no-repeat;
+			background-position-y: bottom; 
+		}
+
+		h1 {
+			margin: 70px 0 10px;
+			font-family: 'Gilroy-Black', serif;
+			font-size: 50px;
+			text-transform: uppercase;
+			line-height: 60px;
+			color: white;
+
+			span {
+				font-family: 'Gilroy-Medium', serif;
+			}	
+		}
+
+		p {
+			margin-bottom: 30px;
+			font-size: 30px;
+			line-height: 40px;
+			color: white;
+		}
+
+		.header__buttons {
+
+			a {
+				font-size: 16px;
+				text-transform: uppercase;
+				letter-spacing: 3px;
+				color: white;
+
+			}
+			
+			.header__watch-video {
+				display: flex;
+				align-items: center;
+				a {
+					padding: 15px 30px 15px 30px;
+					border: 1px solid white;
+					border-radius: 50px;
+					&:hover, &:active, &:focus {
+						text-decoration: underline;
+					}
+				}
+
+				img {
+					margin-right: 10px;
+					position: relative;
+					bottom: 2px;
+				}
+			}
+
+			.header__sign-up a {
+				padding: 19px 52px 18px 53px;
+				background-color: white;
+				border: 1px solid white;
+				border-radius: 50px;
+				font-family: 'Gilroy-Extrabold', serif;
+				color: #30333d;
+				&:hover {
+					background-color: transparent;
+					color: white;
+				}
+
+				&:active {
+					background-color: transparent;
+					color: white;
+				}
+
+				&:focus {
+					background-color: transparent;
+					color: white;
+				}
+			}
+		}
+
+	}
+
+	.header__social {
+		position: absolute;
+		bottom: -35px;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		a {
+			width: 81px;
+			height: 81px;
+			color: white;
+		}
+	}
+}

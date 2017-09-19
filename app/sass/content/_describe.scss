@@ -1,0 +1,67 @@
+.describe {
+	height: 647px;
+	background-color: #f4f3f3;
+
+	.describe__circle {
+		width: 207px;
+		height: 207px;
+		position: absolute;
+		top: 52px;
+		left: 20px;
+		background-image: url(../img/circles.png);
+	}
+	
+	.describe__text {
+		position: relative;
+		max-width: 470px;
+		top: 130px;
+		left: 100px;
+
+		h2 {
+			font-family: 'Gilroy-Extrabold';
+			font-size: 34px;
+			line-height: 43px;
+			text-transform: uppercase;
+		}
+
+		p {
+			margin-bottom: 65px;
+			font-family: 'Gilroy-Semibold';
+			line-height: 30px;
+		}
+
+		a {
+			padding: 16px 52px 14px 53px;
+			font-family: 'Gilroy-Extrabold', sans-serif;
+			text-transform: uppercase;
+			letter-spacing: 3px;
+			background-color: #55c2a2;
+			border: 1px solid #55c2a2;
+			border-radius: 50px;
+			color: #30333d;
+			&:hover, &:active, &:focus {
+				bacground-color: transparent;
+				color: #55c2a2;
+			}
+		}	
+	}
+	.describe__join {
+		.describe__room-bg {
+			position: relative;
+			top: 100px;
+			left: 100px;
+			width: 600px;
+			height: 383px;
+			background-image: url(../img/room.png);
+		}
+		
+		p {
+			position: relative;
+			top: 100px;
+			left: 100px;
+			font-family: 'Gilroy-Thin', sans-serif;
+			font-size: 88px;
+		}
+	}
+
+}
