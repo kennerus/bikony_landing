@@ -1,6 +1,8 @@
 .header {
 	min-height: 768px;
-	background-image: url(../img/header-bg.jpg);
+	background-image: url(../img/header-bg.jpg);\
+	background-repeat: no-repeat;
+	background-size: cover;
 
 	.header__logo {
 		box-shadow: -25px 25px 50px #303030;
