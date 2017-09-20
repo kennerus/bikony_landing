@@ -1,0 +1,70 @@
+.service {
+	position: relative;
+	height: 710px;
+	background-image: url(../img/service-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	z-index: 1;
+	.container, .row {
+		height: 100%;
+	}
+	.service__we-offer {
+		color: white;
+		h2 {
+			font-family: 'Gilroy-Black';
+			font-size: 34px;
+			text-transform: uppercase;
+		}
+
+		.service__hr {
+			width: 43px;
+			height: 1px;
+			margin: 15px 0 20px;
+			background-color: white;
+			
+		}
+
+		p {
+			font-size: 17px;
+			line-height: 22px;
+		}
+
+		.sign-up {
+			margin-top: 50px;
+			a {
+				padding: 16px 52px 14px 53px;
+				font-family: 'Gilroy-Extrabold', sans-serif;
+				text-transform: uppercase;
+				letter-spacing: 3px;
+				background-color: white;
+				border: 1px solid white;
+				border-radius: 50px;
+				color: #30333d;
+				transition: all 200ms ease-in-out;
+				&:hover, &:active, &:focus {
+					background-color: transparent;
+					color: white;
+					transition: all 200ms ease-in-out;
+				}
+			}
+		}
+	}
+	.service__offer {
+		padding: 60px 60px 40px 70px;
+		background-color: #f4f3f3;
+		.col-md-2 {
+			padding: 0;
+		}
+		
+		h4 {
+			margin-bottom: 5px;
+			font-family: 'Gilroy-Black';
+			font-size: 16px;
+		}
+
+		p {
+			font-size: 14px;
+		}
+	}
+}

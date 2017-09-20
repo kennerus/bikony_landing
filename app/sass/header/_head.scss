@@ -1,6 +1,6 @@
 .header {
 	min-height: 768px;
-	background-image: url(../img/header-bg.jpg);\
+	background-image: url(../img/header-bg.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 
@@ -53,7 +53,7 @@
 				display: flex;
 				align-items: center;
 				a {
-					padding: 15px 30px 15px 30px;
+					padding: 16px 30px 15px;
 					border: 1px solid white;
 					border-radius: 50px;
 					&:hover, &:active, &:focus {
@@ -75,19 +75,11 @@
 				border-radius: 50px;
 				font-family: 'Gilroy-Extrabold', serif;
 				color: #30333d;
-				&:hover {
+				transition: all 200ms ease-in-out;
+				&:hover, &:active, &:focus {
 					background-color: transparent;
 					color: white;
-				}
-
-				&:active {
-					background-color: transparent;
-					color: white;
-				}
-
-				&:focus {
-					background-color: transparent;
-					color: white;
+					transition: all 200ms ease-in-out;
 				}
 			}
 		}

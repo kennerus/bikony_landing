@@ -8,7 +8,7 @@
 		position: absolute;
 		top: 52px;
 		left: 20px;
-		background-image: url(../img/circles.png);
+		background-image: url(../img/circle.png);
 	}
 	
 	.describe__text {
@@ -39,9 +39,11 @@
 			border: 1px solid #55c2a2;
 			border-radius: 50px;
 			color: #30333d;
+			transition: all 200ms ease-in-out;
 			&:hover, &:active, &:focus {
-				bacground-color: transparent;
+				background-color: transparent;
 				color: #55c2a2;
+				transition: all 200ms ease-in-out;
 			}
 		}	
 	}

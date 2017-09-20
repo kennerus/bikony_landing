@@ -1,0 +1,20 @@
+.stats {
+	height: 210px;
+	background-color: #5acdab;
+	text-align: center;
+	.container, .row.align-items-center {
+		height: 100%;
+		h4 {
+			margin-top: 30px;
+			font-family: 'Gilroy-Light';
+			font-size: 40px;
+			line-height: 21px;
+		}
+		
+		p {
+			margin-bottom: 0;
+			font-family: 'Gilroy-Bold';
+			line-height: 19px;
+		}
+	}
+}

@@ -1,0 +1,75 @@
+.cook-book {
+	height: auto;
+
+	.container,
+	.container > .row {
+		height: 100%;
+		position: relative;
+		z-index: 10;
+	}
+
+	h2 {
+		margin: 70px 0; 
+		font-family: 'Gilroy-Black';
+		font-size: 34px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	.cook-book__content {
+		.cook-book__circle {
+			position: absolute;
+			top: -65px;
+			right: 85%;
+			width: 137px;
+			height: 137px;
+			background-image: url(../img/circle-small.png);
+			z-index: -1;
+		}
+		.cook-book__block {
+			position: relative;
+			height: auto;
+			padding: 30px 50px;
+			margin-bottom: 70px;
+			box-shadow: 0 0 20px rgba(125,125,125,0.5);
+			background-color: white;
+			z-index: 5;
+			
+
+			h4 {
+				margin-top: 5px;
+				font-family: 'Gilroy-Extrabold';
+				font-size: 15px;
+			}
+
+			p {
+				font-family: 'Myriad';
+				font-size: 15px;
+				&:nth-child(2) {
+					margin-bottom: 10px;
+				}
+			}
+
+			.date,
+			.comments {
+				font-family: 'Myriad';
+				font-size: 13px;
+				text-align: right;
+			}
+
+			.like {
+				font-family: 'Myriad';
+				font-size: 13px;
+			}
+
+			hr {
+				margin: 5px 0;
+			}
+
+			.read-more {
+				margin-bottom: 5px;
+			}
+
+		}
+	}
+}
