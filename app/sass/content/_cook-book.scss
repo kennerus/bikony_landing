@@ -1,5 +1,17 @@
 .cook-book {
+	position: relative;
 	height: auto;
+	background-image: url(../img/bikon-yellow.png);
+	background-position: right bottom;
+	background-repeat: no-repeat;
+	
+	.bikony-blue {
+		width: 265px;
+		height: 614px;
+		top: -265px;
+		position: absolute;
+		background-image: url(../img/bikon-blue.png);
+	}
 
 	.container,
 	.container > .row {
@@ -20,13 +32,15 @@
 		.cook-book__circle {
 			position: absolute;
 			top: -65px;
-			right: 85%;
+			right: 83%;
 			width: 137px;
 			height: 137px;
 			background-image: url(../img/circle-small.png);
 			z-index: -1;
 		}
 		.cook-book__block {
+			width: 460px;
+			height: 485px;
 			position: relative;
 			height: auto;
 			padding: 30px 50px;
@@ -50,26 +64,95 @@
 				}
 			}
 
+
+			.comments {
+				span.com {
+					margin: 0 15px 0 5px;
+				}
+				span.eye {
+					margin-left: 5px;
+				}
+				img:last-of-type {
+					position: relative;
+					bottom: 2px;
+				}
+			}
+
 			.date,
 			.comments {
 				font-family: 'Myriad';
 				font-size: 13px;
 				text-align: right;
 			}
+			
+			
 
 			.like {
 				font-family: 'Myriad';
 				font-size: 13px;
+				a {
+					color: #272727;
+					span {
+						position: relative;
+						top: 2px;
+					}
+				}
 			}
 
 			hr {
 				margin: 5px 0;
 			}
 
-			.read-more {
+			p.read-more {
 				margin-bottom: 5px;
+				a {
+					text-decoration: underline;
+					color: #fd9892;
+					&:hover, &:active,&:focus {
+						text-decoration: none;
+					}
+				}
 			}
 
+		}
+
+		.video {
+			hr:nth-of-type(1) {
+				margin-bottom: 20px;
+			}
+
+			p.read-more {
+				margin-top: 15px;
+			}
+
+			div.like a span {
+				top: 1px;
+			}
+
+			div.comments img:last-of-type {
+				bottom: 1px;
+			}
+		}
+
+		.see-more {
+			margin: 30px 0 80px;
+			text-align: center;
+			a {
+				padding: 13px 30px 10px 30px;
+				border: 1px solid #57c5a5;
+				border-radius: 50px;
+				background-color: #57c5a5;
+				font-family: 'Gilroy-Bold';
+				text-transform: uppercase;
+				line-height: 22px;
+				letter-spacing: 3px;
+				color: #10141f;
+				transition: all 200ms;
+				&:hover, &:active, &:focus {
+					background-color: transparent;
+					transition: all 200ms;
+				}
+			}
 		}
 	}
 }

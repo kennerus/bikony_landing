@@ -1,0 +1,58 @@
+.reply {
+	height: 265px;
+	font-family: 'Gilroy-Bold';
+	color: white;
+	background-image: url(../img/questions-bg.png);
+	background-size: cover;
+	text-align: center;
+	.container, .row {
+		height: 100%;
+	}
+
+	h2 {
+		margin-top: 50px;
+		font-size: 30px;
+		line-height: 35px;
+		text-transform: uppercase;
+	}
+
+	p {
+		font-size: 18px;
+		line-height: 12px;
+	}
+
+	#form {
+		input {
+			margin: 50px 20px;
+			padding: 5px 10px;
+			background-color: transparent;
+			border: none;
+			border-bottom: 1px solid white;
+			color: white;
+			&[type="text"], &[type="email"] {
+				width: 160px;
+			}
+			
+
+		}
+		
+		input[type="submit"] {
+			width: auto;
+			padding: 8px 20px 5px 20px;
+			border: 1px solid white;
+			border-radius: 50px;
+			background-color: white;
+			font-family: 'Gilroy-Bold', sans-serif;
+			text-transform: uppercase;
+			line-height: 22px;
+			letter-spacing: 3px;
+			color: #10141f;
+			transition: all 200ms;
+			&:hover, &:active, &:focus {
+				background-color: transparent;
+				color: white;
+				transition: all 200ms;
+			}
+		}
+	}
+}

@@ -1,0 +1,46 @@
+.software {
+	height: 480px;
+	background: url(../img/devices.png) 100% 30px no-repeat,
+				url(../img/software-bg.png) bottom no-repeat;
+	background-color: white;
+	background-size: auto auto, 100vw 415px;
+	.container, .row {
+		height: 100%;
+	}
+
+	.software__text {
+		h2 {
+			font-family: 'Gilroy-Extrabold';
+			font-size: 32px;
+			text-transform: uppercase;
+			line-height: 38px;
+		}
+		
+		p {
+			width: 400px;
+			margin: 30px 0 50px;
+			font-family: 'Gilroy-Medium';
+			font-size: 15px;
+			line-height: 22px;
+		}
+		div {
+			margin-left: 50px;
+			a {
+				padding: 13px 30px 10px 30px;
+				border: 1px solid #57c5a5;
+				border-radius: 50px;
+				background-color: #57c5a5;
+				font-family: 'Gilroy-Bold';
+				text-transform: uppercase;
+				line-height: 22px;
+				letter-spacing: 3px;
+				color: #10141f;
+				transition: all 200ms;
+				&:hover, &:active, &:focus {
+					background-color: transparent;
+					transition: all 200ms;
+				}
+			}
+		}
+	}
+}

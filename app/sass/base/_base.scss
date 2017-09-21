@@ -22,11 +22,41 @@ a {
     }
 }
 
-input{
+input {
     outline: none;
     &:hover, &:focus, &:active{
         outline: none;
     }
+}
+
+::-webkit-input-placeholder {
+    font-family: 'Gilroy-Medium';
+    color: #fff;
+}
+::-moz-placeholder          {
+    font-family: 'Gilroy-Medium';
+    color: #fff;
+}
+:-moz-placeholder           {
+    font-family: 'Gilroy-Medium';
+    color: #fff;
+}
+:-ms-input-placeholder      {
+    font-family: 'Gilroy-Medium';
+    color: #fff;
+}
+
+:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+:focus::-moz-placeholder {
+    opacity: 0;
+}
+:focus:-moz-placeholder {
+    opacity: 0;
+}
+:focus:-ms-input-placeholder {
+    opacity: 0;
 }
 
 textarea{

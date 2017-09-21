@@ -1,0 +1,97 @@
+.footer {
+	background-color: #f4f3f3;
+	
+	.footer__title {
+		text-align: center;
+		
+		p {
+			margin: 50px 0;
+			font-family: 'Montserrat', sans-serif;
+			line-height: 0;
+
+			.footer__industry {
+				display: block;
+				font-size: 45px;
+				font-weight: 300;
+				color: #a3dece;
+				line-height: 45px;
+			}
+
+			.footer__fhd {
+				line-height: 40px;
+				display: block;
+				font-size: 60px;
+				font-weight: 400;
+				color: #1b1b1b;
+			}
+		}
+	}
+	
+	.footer__contacts {
+		padding-bottom: 50px;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 18px;
+		.title {
+			font-family: 'Gilroy-Extrabold';
+			.col {
+				padding: 0;
+			}
+		}
+		.adress,
+		.phone {
+			margin-bottom: 20px;
+		}
+
+		.mark-ico {
+			position: relative;
+			left: 15px;
+			width: 16px;
+			height: 16px;
+			&:before {
+				content:'';
+				position: absolute;
+				width: 16px;
+				height: 16px;
+				top: 5px;
+				right: 15px;
+				background-image: url(../img/mark-ico.png);
+
+			}
+		}
+
+		.phone-ico {
+			position: relative;
+			left: 15px;
+			width: 14px;
+			height: 14px;
+			&:before {
+				content:'';
+				position: absolute;
+				width: 14px;
+				height: 14px;
+				top: 7px;
+				right: 15px;
+				background-image: url(../img/phone-ico.png);
+
+			}
+		}
+
+		.mail-ico {
+			position: relative;
+			left: 15px;
+			width: 12px;
+			height: 10px;
+			&:before {
+				content:'';
+				position: absolute;
+				width: 12px;
+				height: 10px;
+				top: 10px;
+				right: 15px;
+				background-image: url(../img/maill-ico.png);
+
+			}
+		}
+	}
+
+}
