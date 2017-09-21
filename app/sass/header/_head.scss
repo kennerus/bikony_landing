@@ -4,10 +4,96 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 
+	@include breakpoint(max-width 576px) {
+		height: 830px;
+	}
+
+	@include breakpoint(max-width 420px) {
+		height: 900px;
+	}
+
+	/*иконка меню*/
+	#nav-icon1 {
+		width: 45px;
+		height: 40px;
+		position: relative;
+		margin: 15px auto;
+		transform: rotate(0deg);
+		transition: 0.5s ease-in-out;
+		cursor: pointer;
+
+		span {
+			display: block;
+			position: absolute;
+			height: 5px;
+			width: 100%;
+			background: #fafafa;
+			border-radius: 9px;
+			opacity: 1;
+			left: 0;
+			transform: rotate(0deg);
+			transition: 0.25s ease-in-out;
+				&:nth-of-type(1) {
+					top: 0px;
+				}
+
+				&:nth-of-type(2) {
+					top: 15px;
+				}
+
+				&:nth-of-type(3) {
+					top: 30px;
+				}
+			}	
+
+		.open {
+			span:nth-of-type(1) {
+				top: 18px;
+				transform: rotate(135deg);
+			}
+		}
+			
+
+		.open {
+			span:nth-of-type(2) {
+				opacity: 0;
+				left: -60px;
+			}
+		}
+
+		.open {
+			span:nth-of-type(3) {
+				top: 18px;
+				transform: rotate(-135deg);
+			}
+		}
+
+		@include breakpoint(min-width 1280px) {
+			display: none;
+			}
+	}
+
+		
+
 	.header__logo {
 		box-shadow: -25px 25px 50px #303030;
 		padding: 0;
 		max-width: 125px;
+	}
+
+	.header__nav {
+		@include breakpoint(max-width 1280px) {
+			visibility: hidden;
+		}
+	}
+
+	.expand {
+		display: flex;
+		visibility: visible;
+		transition: all 0.5s;
+		left: 0;
+		width: 100%;
+		background-color: rgba(86,83,76,0.8);
 	}
 	
 	.header__solutions {
@@ -16,19 +102,27 @@
 		.header__phone {
 			background-image: url(../img/hand.png);
 			background-repeat: no-repeat;
-			background-position-y: bottom; 
+			background-position-y: bottom;
+
+			@include breakpoint(max-width 1200px) {
+				display: none;
+			}
 		}
 
 		h1 {
 			margin: 70px 0 10px;
-			font-family: 'Gilroy-Black', serif;
+			font-family: 'Gilroy-Black', sans-serif;
 			font-size: 50px;
 			text-transform: uppercase;
 			line-height: 60px;
 			color: white;
 
+			@include breakpoint(max-width 576px) {
+				font-size: 2.5rem;
+			}
+
 			span {
-				font-family: 'Gilroy-Medium', serif;
+				font-family: 'Gilroy-Medium', sans-serif;
 			}	
 		}
 
@@ -37,6 +131,9 @@
 			font-size: 30px;
 			line-height: 40px;
 			color: white;
+			@include breakpoint(max-width 576px) {
+				font-size: 1.5rem;
+			}
 		}
 
 		.header__buttons {
@@ -52,7 +149,9 @@
 			.header__watch-video {
 				display: flex;
 				align-items: center;
+				max-width: 330px;
 				a {
+					white-space: nowrap;
 					padding: 16px 30px 15px;
 					border: 1px solid white;
 					border-radius: 50px;
@@ -68,18 +167,26 @@
 				}
 			}
 
-			.header__sign-up a {
-				padding: 19px 52px 18px 53px;
-				background-color: white;
-				border: 1px solid white;
-				border-radius: 50px;
-				font-family: 'Gilroy-Extrabold', serif;
-				color: #30333d;
-				transition: all 200ms ease-in-out;
-				&:hover, &:active, &:focus {
-					background-color: transparent;
-					color: white;
+			.header__sign-up {
+				a {
+					white-space: nowrap;
+					padding: 19px 52px 18px 53px;
+					background-color: white;
+					border: 1px solid white;
+					border-radius: 50px;
+					font-family: 'Gilroy-Extrabold', serif;
+					color: #30333d;
 					transition: all 200ms ease-in-out;
+
+					&:hover, &:active, &:focus {
+						background-color: transparent;
+						color: white;
+						transition: all 200ms ease-in-out;
+					}
+				}
+
+				@include breakpoint(max-width 768px) {
+					margin-top: 50px;
 				}
 			}
 		}
@@ -92,10 +199,23 @@
 		left: 0;
 		right: 0;
 		margin: 0 auto;
+		text-align: center;
+
 		a {
 			width: 81px;
 			height: 81px;
 			color: white;
+		}
+
+		@include breakpoint(max-width 576px) {
+			width: 81px;
+			height: 81px;
+			bottom: -100px;
+			flex-wrap: nowrap;
+		}
+
+		@include breakpoint(max-width 420px) {
+			bottom: -170px;
 		}
 	}
 }

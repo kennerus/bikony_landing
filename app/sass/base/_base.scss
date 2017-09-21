@@ -27,6 +27,9 @@ input {
     &:hover, &:focus, &:active{
         outline: none;
     }
+    &::placeholder{
+        opacity: 1;
+    }
 }
 
 ::-webkit-input-placeholder {
