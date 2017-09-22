@@ -6,13 +6,50 @@
 	background-size: cover;
 	background-position: center;
 	z-index: 1;
+
+	@include breakpoint(max-width 1024px) {
+		height: 1100px;
+		background-position: left;
+	}
+
+	@include breakpoint(max-width 530px) {
+		height: 1500px;
+	}
+
+	@include breakpoint(max-width 300px) {
+		height: 1800px;
+	}
+
 	.container, .row {
 		height: 100%;
 	}
+	
+	.container {
+		@include breakpoint (max-width 1024px) {
+			width: 100%;
+			max-width: 100%;
+		}
+
+	}
+
 	.service__we-offer {
 		color: white;
+
+		@include breakpoint(max-width 1024px) {
+			min-width: 320px;
+			max-width: 75%;
+			flex: 0 0 75%;
+			margin: 30px auto 0;
+		}
+
+		@include breakpoint(max-width 768px) {
+			min-width: 100%;
+			max-width: 100%;
+			flex: 0 0 100%;
+		}
+
 		h2 {
-			font-family: 'Gilroy-Black';
+			font-family: 'Gilroy-Black', sans-serif;
 			font-size: 34px;
 			text-transform: uppercase;
 		}
@@ -32,6 +69,7 @@
 
 		.sign-up {
 			margin-top: 50px;
+
 			a {
 				padding: 16px 52px 14px 53px;
 				font-family: 'Gilroy-Extrabold', sans-serif;
@@ -48,23 +86,81 @@
 					transition: all 200ms ease-in-out;
 				}
 			}
+
 		}
 	}
 	.service__offer {
 		padding: 60px 60px 40px 70px;
 		background-color: #f4f3f3;
-		.col-md-2 {
-			padding: 0;
+
+		@include breakpoint(max-width 1024px) {
+			min-width: 80vw;
+			max-width: 640px;
+			margin: 0 auto;
+			padding: 50px 0;
+		}
+
+		@include breakpoint(max-width 768px) {
+			width: 90vw;
+			min-width: 300px;
+			margin-top: 0px;
+			padding: 30px 20px;
 		}
 		
+		@include breakpoint(max-width 530px) {
+			width: 100vw;
+			margin-top: 30px;
+			padding: 30px 0;
+		}
+
 		h4 {
 			margin-bottom: 5px;
-			font-family: 'Gilroy-Black';
+			font-family: 'Gilroy-Black', sans-serif;
 			font-size: 16px;
 		}
 
 		p {
 			font-size: 14px;
 		}
+
+		.block {
+			max-width: 215px;
+			min-width: 215px;
+			min-height: 125px;
+			
+			@include breakpoint(max-width 530px) {
+				max-width: 290px;
+			}
+
+			.row {
+				max-width: 215px;
+				width: 215px;
+
+				@include breakpoint(max-width 530px) {
+					max-width: 290px;
+					width: 290px;
+				}
+			}
+
+			.ico {
+				max-width: 40px;
+				max-height: 38px;
+				padding: 0;
+
+				@include breakpoint(max-width 300px) {
+					max-width: 50px;
+					margin-bottom: 15px;
+				}
+			}
+
+			.text {
+				max-width: calc(215px - 40px);
+				@include breakpoint(max-width 530px) {
+					max-width: 250px;
+				}
+			}
+		}
+
 	}
+
 }

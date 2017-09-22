@@ -13,6 +13,7 @@ body{
     vertical-align: baseline;
     font-family: 'Gilroy-Medium', sans-serif;
     color: #30333d;
+    overflow-x: hidden;
 }
 
 a {
@@ -33,19 +34,19 @@ input {
 }
 
 ::-webkit-input-placeholder {
-    font-family: 'Gilroy-Medium';
+    font-family: 'Gilroy-Medium', sans-serif;
     color: #fff;
 }
 ::-moz-placeholder          {
-    font-family: 'Gilroy-Medium';
+    font-family: 'Gilroy-Medium', sans-serif;
     color: #fff;
 }
 :-moz-placeholder           {
-    font-family: 'Gilroy-Medium';
+    font-family: 'Gilroy-Medium', sans-serif;
     color: #fff;
 }
 :-ms-input-placeholder      {
-    font-family: 'Gilroy-Medium';
+    font-family: 'Gilroy-Medium', sans-serif;
     color: #fff;
 }
 

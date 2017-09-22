@@ -104,11 +104,15 @@
 				transition: all 0.5s;
 					a {
 					width: 100vw;
-					padding: 20px;
+					padding: 20px 0;
 					align-self: center;
 					font-size: 1.5rem;
 					text-align: center;
 				}
+			}
+
+			@include breakpoint(max-width 400px) {
+				width: 95vw;
 			}
 		}
 
@@ -192,6 +196,9 @@
 				letter-spacing: 3px;
 				color: white;
 
+				@include breakpoint(max-width 340px) {
+					font-size: 14px;
+				}
 			}
 			
 			.header__watch-video {
@@ -206,6 +213,10 @@
 					&:hover, &:active, &:focus {
 						text-decoration: underline;
 					}
+
+					@include breakpoint(max-width 340px) {
+						padding: 16px 10px 15px;
+					}
 				}
 
 				img {
@@ -213,6 +224,8 @@
 					position: relative;
 					bottom: 2px;
 				}
+
+
 			}
 
 			.header__sign-up {

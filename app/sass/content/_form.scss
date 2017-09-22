@@ -1,6 +1,6 @@
 .reply {
-	height: 265px;
-	font-family: 'Gilroy-Bold';
+	min-height: 265px;
+	font-family: 'Gilroy-Bold', sans-serif;
 	color: white;
 	background-image: url(../img/questions-bg.png);
 	background-size: cover;
@@ -18,7 +18,7 @@
 
 	p {
 		font-size: 18px;
-		line-height: 12px;
+		line-height: 1.5;
 	}
 
 	#form {
@@ -33,6 +33,9 @@
 				width: 160px;
 			}
 			
+			@include breakpoint(max-width 980px) {
+				margin: 30px 20px 10px;
+			}
 
 		}
 		
@@ -52,6 +55,10 @@
 				background-color: transparent;
 				color: white;
 				transition: all 200ms;
+			}
+
+			@include breakpoint(max-width 980px) {
+				margin: 20px 0 30px;
 			}
 		}
 	}

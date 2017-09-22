@@ -1,13 +1,25 @@
 .our-products {
 	height: 800px;
+	
+	@include breakpoint(max-width 992px) {
+		height: 1400px;
+	}
+
+	@include breakpoint(max-width 576px) {
+		height: 2600px;
+	}
 	h2 {
 		position: relative;
 		margin: 60px 0 100px;
-		font-family: 'Gilroy-Black';
+		font-family: 'Gilroy-Black', sans-serif;
 		font-size: 34px;
 		text-align: center;
 		text-transform: uppercase;
 		z-index: 1;
+
+		@include breakpoint(max-width 576px) {
+			margin-bottom: 60px;
+		}
 	}
 
 	.our-products__circle {
@@ -21,17 +33,25 @@
 	}
 
 	.our-products__products {
-		height: 575px;
 		.our-products-product {
+			max-width: 300px;
+			height: 575px;
+			margin: 0 auto;
 			transition: box-shadow 300ms ease-in-out;
 			&:hover {
 				box-shadow: 0px 10px 50px rgba(125,125,125,0.5);
-				transition: box-shadow 300ms ease-in-out;
-			} 
+				transition: all 300ms ease-in-out;
+			}
+
+			@include breakpoint(max-width 400px) {
+				max-width: 90vw;
+				margin-top: 20px;
+			}
+
 			h3 {
 				margin-top: 40px;
 				height: 50px;
-				font-family: 'Gilroy-Black';
+				font-family: 'Gilroy-Black', sans-serif;
 				font-size: 22px;
 				text-align: center;
 				text-transform: uppercase;
@@ -75,10 +95,11 @@
 
 			div.col {
 				padding-left: 30px;
-				font-family: 'Ubuntu';
+				font-family: 'Ubuntu', sans-serif;
 			}
 
-			.col-md-1 {
+			.fav-ico {
+				width: 19px;
 				position: relative;
 				right: 4px;
 				padding-left: 35px;
@@ -97,7 +118,7 @@
 			}
 
 			.item-cost p {
-				font-family: 'Ubuntu';
+				font-family: 'Ubuntu', sans-serif;
 				font-weight: 700;
 				font-size: 29px;
 				text-align: center;
@@ -120,8 +141,8 @@
 				margin-top: 50px;
 				text-align: center;
 				a {
-					padding: 12px 70px 10px 69px;
-					font-family: 'Gilroy-Black';
+					padding: 12px 50px 10px 49px;
+					font-family: 'Gilroy-Black', sans-serif;
 					background-color: transparent;
 					border: 1px solid #30333D;
 					border-radius: 50px;
