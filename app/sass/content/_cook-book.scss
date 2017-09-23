@@ -11,6 +11,10 @@
 		top: -265px;
 		position: absolute;
 		background-image: url(../img/bikon-blue.png);
+
+		@include breakpoint(max-width 992px) {
+			display: none;
+		}
 	}
 
 	.container,
@@ -50,9 +54,19 @@
 			background-image: url(../img/circle-small.png);
 			z-index: -1;
 		}
+
+		.width350 {
+			min-width: 350px;
+			max-width: 460px;
+			min-height: 485px;
+			height: auto;
+
+			@include breakpoint(max-width 360px) {
+				min-width: 90vw;
+			}
+		}
+
 		.cook-book__block {
-			min-width: 460px;
-			height: 485px;
 			position: relative;
 			height: auto;
 			padding: 30px 50px;
@@ -63,6 +77,7 @@
 			
 			@include breakpoint(max-width 576px) {
 				margin: 0 auto 70px;
+				padding: 20px 30px;
 			}
 
 			h4 {
@@ -81,6 +96,7 @@
 
 
 			.comments {
+				margin-right: 15px;
 				span.com {
 					margin: 0 15px 0 5px;
 				}
@@ -94,10 +110,11 @@
 			}
 
 			.date,
-			.comments {
+			.comments a {
 				font-family: 'Myriad';
 				font-size: 13px;
 				text-align: right;
+				color: #272727;
 			}
 			
 			
