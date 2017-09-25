@@ -65,6 +65,13 @@
 				color: #55c2a2;
 				transition: all 200ms ease-in-out;
 			}
+
+			@include breakpoint(max-width 992px) {
+				text-align: center;
+				margin: 0 auto;
+				display: block;
+				width: 200px;
+			}
 		}	
 	}
 	.describe__join {

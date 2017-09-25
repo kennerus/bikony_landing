@@ -54,9 +54,9 @@
 		div {
 			margin-left: 50px;
 
-			@include breakpoint(max-width 900px) {
-				margin: 0;
-				
+			@include breakpoint(max-width 992px) {
+				margin: 0 auto;
+				text-align: center;
 			}
 			
 			a {

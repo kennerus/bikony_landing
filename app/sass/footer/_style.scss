@@ -47,6 +47,11 @@
 		font-family: 'Montserrat', sans-serif;
 		font-size: 18px;
 
+		@include breakpoint(max-width 768px) {
+			width: 90vw;
+			margin: 0 auto;
+		}
+
 		.title {
 			font-family: 'Gilroy-Extrabold';
 			.col {
